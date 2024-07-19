@@ -22,6 +22,7 @@
 
 body{
     background-color: var(--cor2);
+    flex-direction: column;
     
 }
 
@@ -34,10 +35,6 @@ main {
     padding: 20px;
 }
 
-div.esquerda > img{
-    width: 250px
-}
-
 div.esquerda{
     display: flex;
             justify-content: space-between;
@@ -48,6 +45,7 @@ div.esquerda >p{
     font-family: var(--font-destque);
     font-size: 2em;
     text-shadow: 5px 5px 5px black;
+   
 }
 
 div.fora > h1{
@@ -79,15 +77,16 @@ main img.kid{
 
 
 header{
-    background-color: #052205;
+    background-color: var(--cor1);
     min-height: 100px;
     padding-top: 20px;
+    padding: 10px;
 }
 
 header > h1{
     
     font-family: var(--font-destque);
-    color: #037503;
+    color: #009400;
     text-align: center;
     font-size: 3em;
     text-shadow: 5px 5px black;
@@ -101,26 +100,24 @@ header > p{
     padding-left: 20px;
     padding-right: 10px;
     margin: auto;
-    padding: 10px;
 
 }
 
 nav{
     background-color: #041a04;
-    padding: 5px;
+    padding: 10px;
 }
 
 nav > a{
     color: white;
     font-family: var(--font-destque);
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
     margin: 25px;
 
 }
 
 nav > a:hover{
-    padding: 5px;
     background-color: #009400;
     transition-duration: 1s;
 }
@@ -154,6 +151,13 @@ div.video > iframe{
     width:90% ;
     height:90% ;
 }
+
+div.esquerda{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
 @media (max-width: 600px) {
 
     div.esquerda > img{
