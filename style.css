@@ -34,6 +34,10 @@ main {
     padding: 20px;
 }
 
+div.esquerda > img{
+    width: 250px
+}
+
 div.esquerda{
     display: flex;
             justify-content: space-between;
@@ -75,7 +79,7 @@ main img.kid{
 
 
 header{
-    background-color: var(--cor1);
+    background-color: #052205;
     min-height: 100px;
     padding-top: 20px;
 }
@@ -83,7 +87,7 @@ header{
 header > h1{
     
     font-family: var(--font-destque);
-    color: #009400;
+    color: #037503;
     text-align: center;
     font-size: 3em;
     text-shadow: 5px 5px black;
@@ -97,6 +101,7 @@ header > p{
     padding-left: 20px;
     padding-right: 10px;
     margin: auto;
+    padding: 10px;
 
 }
 
@@ -109,12 +114,13 @@ nav > a{
     color: white;
     font-family: var(--font-destque);
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     margin: 25px;
 
 }
 
 nav > a:hover{
+    padding: 5px;
     background-color: #009400;
     transition-duration: 1s;
 }
@@ -147,5 +153,29 @@ div.video > iframe{
     left: 5%;
     width:90% ;
     height:90% ;
+}
+@media (max-width: 600px) {
+
+    div.esquerda > img{
+        width: 250px;
+    }
+
+    div.esquerda > p{
+        font-family: var(--font-destque);
+        font-size: 1.1em;
+        text-shadow: 5px 5px 5px black;
+    }
+
+    nav > a{
+        color: white;
+    font-family: var(--font-destque);
+    text-decoration: none;
+    padding: 5px;
+    margin: 25px;
+    }
+
+    nav > a:hover{
+        padding: 10px;
+    }
 }
 
