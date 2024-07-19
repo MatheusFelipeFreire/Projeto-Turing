@@ -161,7 +161,7 @@ div.esquerda{
 @media (max-width: 600px) {
 
     div.esquerda > img{
-        width: 250px;
+        width: 200px;
     }
 
     div.esquerda > p{
